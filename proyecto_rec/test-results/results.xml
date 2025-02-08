@@ -1,0 +1,410 @@
+<testsuites id="" name="" tests="3" failures="3" skipped="0" errors="0" time="5.964315999999642">
+<testsuite name="consultarGuia.spec.ts" timestamp="2025-02-08T16:23:22.622Z" hostname="" tests="1" failures="1" skipped="0" time="3.549" errors="0">
+<testcase name="Consultar Guía › Debe permitir consultar una guía existente" classname="consultarGuia.spec.ts" time="3.549">
+<properties>
+<property name="platform" value="Windows 10.0.26100">
+</property>
+<property name="browser" value="chromium 133.0.6943.16">
+</property>
+</properties>
+<failure message="consultarGuia.spec.ts:8:7 Debe permitir consultar una guía existente" type="FAILURE">
+<![CDATA[  consultarGuia.spec.ts:8:7 › Consultar Guía › Debe permitir consultar una guía existente ──────────
+
+    RangeError: Maximum call stack size exceeded
+
+       at ..\src\questions\LastResponse.ts:6
+
+      4 | export const LastResponse = {
+      5 |     status: () =>
+    > 6 |         Question.about('el estado de la última respuesta', actor =>
+        |                  ^
+      7 |             LastResponse.status().answeredBy(actor),
+      8 |         ),
+      9 |     body: () =>
+        at Object.ErrorStackParser$$parse (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\error-stack-parser\error-stack-parser.js:30:30)
+        at ErrorStackParser.parse (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\errors\ErrorStackParser.ts:13:23)
+        at Function.callerLocation (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Activity.ts:64:46)
+        at QuestionStatement (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:587:58)
+        at Function.about (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:156:15)
+        at Object.status (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:6:18)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:26)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+        at QuestionStatement.body (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\src\questions\LastResponse.ts:7:35)
+        at QuestionStatement.answeredBy (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\Question.ts:601:34)
+]]>
+</failure>
+<system-err>
+<![CDATA[Exception in PromiseRejectCallback:
+C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\lib\screenplay\Question.js:468
+        return this.answer;
+
+RangeError: Maximum call stack size exceeded
+
+Exception in PromiseRejectCallback:
+C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\lib\screenplay\Question.js:467
+        this.answer = await this.body(actor);
+                                 ^
+
+RangeError: Maximum call stack size exceeded
+
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="crearGuia.spec.ts" timestamp="2025-02-08T16:23:22.622Z" hostname="" tests="1" failures="1" skipped="0" time="1.196" errors="0">
+<testcase name="Crear Guía › Debe permitir crear una guía con datos válidos" classname="crearGuia.spec.ts" time="1.196">
+<properties>
+<property name="platform" value="Windows 10.0.26100">
+</property>
+<property name="browser" value="chromium 133.0.6943.16">
+</property>
+</properties>
+<failure message="crearGuia.spec.ts:10:7 Debe permitir crear una guía con datos válidos" type="FAILURE">
+<![CDATA[  crearGuia.spec.ts:10:7 › Crear Guía › Debe permitir crear una guía con datos válidos ─────────────
+
+    Error: 1 async operation has failed to complete:
+    [Photographer:TakePhotosOfFailures] Taking screenshot of 'Usuario enters "RF-5432178" into Campo de referencia'... - TypeError: this.browser.version is not a function
+
+      11 |         const usuario = await Usuario.queBuscaCrearUnaGuia(); // Esperar a que el actor esté listo
+      12 |
+    > 13 |         await usuario.attemptsTo(
+         |         ^
+      14 |             CrearGuia.conLosDatos('RF-5432178', 450000),
+      15 |             Ensure.that(MensajeDeExito.actual(), includes('Guía creada exitosamente')),
+      16 |         );
+        at PlaywrightBrowsingSessionWithBrowser.browserCapabilities (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:50:42)
+        at BrowseTheWebWithPlaywright.browserCapabilities (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\screenplay\abilities\BrowseTheWeb.ts:108:29)
+        at TakePhotosOfFailures.considerTakingPhoto (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\stage\crew\photographer\strategies\PhotoTakingStrategy.ts:56:54)
+        at Photographer.notifyOf (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\stage\crew\photographer\Photographer.ts:225:38)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:29:59
+        at Array.forEach (<anonymous>)
+        at StageManager.notifyOf (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:29:26)
+        at Stage.announceSingle (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:210:22)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:197:18
+        at Array.forEach (<anonymous>)
+        at Stage.announce (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:196:16)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:75:24)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:60:13)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\tests\crearGuia.spec.ts:13:9
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\workerMain.js:341:9
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\testInfo.js:294:11
+        at TimeoutManager.withRunnable (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\timeoutManager.js:64:14)
+        at TestInfoImpl._runAsStage (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\testInfo.js:292:7)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\workerMain.js:333:7
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\testInfo.js:294:11
+        at TimeoutManager.withRunnable (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\timeoutManager.js:52:27)
+        at TestInfoImpl._runAsStage (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\testInfo.js:292:7)
+        at WorkerMain._runTest (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\workerMain.js:283:5)
+        at WorkerMain.runTestGroup (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\workerMain.js:207:11)
+        at process.<anonymous> (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\common\process.js:95:22)
+    ---
+
+        at PlaywrightBrowsingSessionWithBrowser.browserCapabilities (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:50:42)
+        at BrowseTheWebWithPlaywright.browserCapabilities (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\screenplay\abilities\BrowseTheWeb.ts:108:29)
+        at TakePhotosOfFailures.considerTakingPhoto (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\stage\crew\photographer\strategies\PhotoTakingStrategy.ts:56:54)
+        at Photographer.notifyOf (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\stage\crew\photographer\Photographer.ts:225:38)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:29:59
+        at StageManager.notifyOf (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:29:26)
+        at Stage.announceSingle (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:210:22)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:197:18
+        at Stage.announce (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:196:16)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:75:24)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:60:13)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\tests\crearGuia.spec.ts:13:9
+        at StageManager.waitForNextCue (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:57:27)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:79:13)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:60:13)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\tests\crearGuia.spec.ts:13:9
+
+    TypeError: usuario.abilityTo(...).page is not a function
+
+      19 |     afterEach(async () => {
+      20 |         const usuario = actorInTheSpotlight();
+    > 21 |         await usuario.abilityTo(BrowseTheWebWithPlaywright).page().context().browser().close();
+         |                                                             ^
+      22 |     });
+      23 | });
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\tests\crearGuia.spec.ts:21:61
+
+    Error: 1 async operation has failed to complete:
+    [Stage] Actor Usuario exits the stage - TypeError: this.browser.newContext is not a function
+        at PlaywrightBrowsingSessionWithBrowser.createBrowserContext (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:22:29)
+        at PlaywrightBrowsingSessionWithBrowser.browserContext (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSession.ts:55:63)
+        at runNextTicks (node:internal/process/task_queues:60:5)
+        at listOnTimeout (node:internal/timers:538:9)
+        at processTimers (node:internal/timers:512:7)
+        at PlaywrightBrowsingSessionWithBrowser.closeAllPages (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:42:25)
+        at BrowseTheWebWithPlaywright.discard (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\abilities\BrowseTheWebWithPlaywright.ts:175:9)
+        at Stage.dismiss (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:349:17)
+    ---
+
+        at PlaywrightBrowsingSessionWithBrowser.createBrowserContext (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:22:29)
+        at PlaywrightBrowsingSessionWithBrowser.browserContext (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSession.ts:55:63)
+        at PlaywrightBrowsingSessionWithBrowser.closeAllPages (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:42:25)
+        at BrowseTheWebWithPlaywright.discard (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\abilities\BrowseTheWebWithPlaywright.ts:175:9)
+        at Stage.dismiss (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:349:17)
+        at StageManager.waitForNextCue (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:57:27)
+        at Object.actorCalled (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright-test\src\api\test-api.ts:157:9)
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="validarErrores.spec.ts" timestamp="2025-02-08T16:23:22.622Z" hostname="" tests="1" failures="1" skipped="0" time="1.268" errors="0">
+<testcase name="Validaciones de Guia › Debe mostrar un error si la referencia de recaudo esta vacia" classname="validarErrores.spec.ts" time="1.268">
+<properties>
+<property name="platform" value="Windows 10.0.26100">
+</property>
+<property name="browser" value="chromium 133.0.6943.16">
+</property>
+</properties>
+<failure message="validarErrores.spec.ts:9:7 Debe mostrar un error si la referencia de recaudo esta vacia" type="FAILURE">
+<![CDATA[  validarErrores.spec.ts:9:7 › Validaciones de Guia › Debe mostrar un error si la referencia de recaudo esta vacia 
+
+    Error: 1 async operation has failed to complete:
+    [Photographer:TakePhotosOfFailures] Taking screenshot of 'Usuario enters "" into Campo de referencia'... - TypeError: this.browser.version is not a function
+
+      10 |         const usuario = await Usuario.queBuscaCrearUnaGuia(); // Esperar a que el actor esté listo
+      11 |
+    > 12 |         await usuario.attemptsTo(
+         |         ^
+      13 |             CrearGuia.conLosDatos('', 450000),
+      14 |             Ensure.that(MensajeDeError.actual(), includes('Se presento un Error')),
+      15 |             ValidarErroresReferencia.conMensaje('La referencia de recaudo es requerida'),
+        at PlaywrightBrowsingSessionWithBrowser.browserCapabilities (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:50:42)
+        at BrowseTheWebWithPlaywright.browserCapabilities (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\screenplay\abilities\BrowseTheWeb.ts:108:29)
+        at TakePhotosOfFailures.considerTakingPhoto (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\stage\crew\photographer\strategies\PhotoTakingStrategy.ts:56:54)
+        at Photographer.notifyOf (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\stage\crew\photographer\Photographer.ts:225:38)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:29:59
+        at Array.forEach (<anonymous>)
+        at StageManager.notifyOf (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:29:26)
+        at Stage.announceSingle (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:210:22)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:197:18
+        at Array.forEach (<anonymous>)
+        at Stage.announce (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:196:16)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:75:24)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:60:13)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\tests\validarErrores.spec.ts:12:9
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\workerMain.js:341:9
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\testInfo.js:294:11
+        at TimeoutManager.withRunnable (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\timeoutManager.js:64:14)
+        at TestInfoImpl._runAsStage (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\testInfo.js:292:7)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\workerMain.js:333:7
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\testInfo.js:294:11
+        at TimeoutManager.withRunnable (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\timeoutManager.js:52:27)
+        at TestInfoImpl._runAsStage (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\testInfo.js:292:7)
+        at WorkerMain._runTest (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\workerMain.js:283:5)
+        at WorkerMain.runTestGroup (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\worker\workerMain.js:207:11)
+        at process.<anonymous> (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\playwright\lib\common\process.js:95:22)
+    ---
+
+        at PlaywrightBrowsingSessionWithBrowser.browserCapabilities (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:50:42)
+        at BrowseTheWebWithPlaywright.browserCapabilities (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\screenplay\abilities\BrowseTheWeb.ts:108:29)
+        at TakePhotosOfFailures.considerTakingPhoto (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\stage\crew\photographer\strategies\PhotoTakingStrategy.ts:56:54)
+        at Photographer.notifyOf (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\web\src\stage\crew\photographer\Photographer.ts:225:38)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:29:59
+        at StageManager.notifyOf (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:29:26)
+        at Stage.announceSingle (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:210:22)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:197:18
+        at Stage.announce (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:196:16)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:75:24)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:60:13)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\tests\validarErrores.spec.ts:12:9
+        at StageManager.waitForNextCue (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:57:27)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:79:13)
+        at PerformActivities.perform (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\screenplay\abilities\PerformActivities.ts:60:13)
+        at C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\tests\validarErrores.spec.ts:12:9
+
+    Error: 1 async operation has failed to complete:
+    [Stage] Actor Usuario exits the stage - TypeError: this.browser.newContext is not a function
+        at PlaywrightBrowsingSessionWithBrowser.createBrowserContext (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:22:29)
+        at PlaywrightBrowsingSessionWithBrowser.browserContext (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSession.ts:55:63)
+        at runNextTicks (node:internal/process/task_queues:60:5)
+        at listOnTimeout (node:internal/timers:538:9)
+        at processTimers (node:internal/timers:512:7)
+        at PlaywrightBrowsingSessionWithBrowser.closeAllPages (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:42:25)
+        at BrowseTheWebWithPlaywright.discard (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\abilities\BrowseTheWebWithPlaywright.ts:175:9)
+        at Stage.dismiss (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:349:17)
+    ---
+
+        at PlaywrightBrowsingSessionWithBrowser.createBrowserContext (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:22:29)
+        at PlaywrightBrowsingSessionWithBrowser.browserContext (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSession.ts:55:63)
+        at PlaywrightBrowsingSessionWithBrowser.closeAllPages (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\models\PlaywrightBrowsingSessionWithBrowser.ts:42:25)
+        at BrowseTheWebWithPlaywright.discard (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright\src\screenplay\abilities\BrowseTheWebWithPlaywright.ts:175:9)
+        at Stage.dismiss (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\Stage.ts:349:17)
+        at StageManager.waitForNextCue (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\core\src\stage\StageManager.ts:57:27)
+        at Object.actorCalled (C:\Users\jcandelo\Project Python\test-recaudo\proyecto_rec\node_modules\@serenity-js\playwright-test\src\api\test-api.ts:157:9)
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

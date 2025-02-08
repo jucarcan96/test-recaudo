@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@serenity-js/core": "^3.31.8",
+    "@serenity-js/playwright": "^3.31.8",
+    "playwright": "^1.50.1"
+  }
+}
