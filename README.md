@@ -1,5 +1,7 @@
-# test-recaudo
->> Repositorio con la propuesta de desarrollo del Reto Tecnico Coordinadora
+>> **Welcomee to the test-recaudo:** Repositorio ceado con el fin de desarrollar la propuesta para Reto Tecnico Coordinadora
+
+# proyecto_rec
+>> Proyecto con Playwright y estructurarlo usando Screenplay para la implementacion del punto 4. Prueba Funcional con Playwright y Screenplay
 
 # Wiki
->> Donde encontraras la documentacion del desarrollo del Reto Tecnico (Cada pagina corresponde a los puntos del Reto)
+>> Lugar donde se encuentra la documentacion del desarrollo para el Reto Tecnico (Cada pagina corresponde a los puntos del Reto)
